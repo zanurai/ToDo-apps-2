@@ -1,0 +1,118 @@
+:root {
+    --dark: rgb(219, 170, 78);
+    --darker: rgb(121, 95, 49);
+    --darkest: rgb(73, 54, 20);
+    --blue: skyblue;
+    --red: red;
+    --black: rgb(51, 38, 38);
+    --pink: rgb(235, 70, 213);
+    --purple: purple;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 800px;
+    margin: auto;
+    background: var(--dark);
+    margin-top: 50px;
+}
+
+header h1 {
+    font-size: 40px;
+    background: linear-gradient(var(--darkest), var(--red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#new-ToDo {
+    margin-top: 20px;
+}
+
+#new-apps {
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    background: var(--blue);
+}
+
+#new-submit {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background: linear-gradient(rgb(185, 74, 74), rgb(109, 209, 69));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+input {
+    background: none;
+    outline: none;
+    border: none;
+    appearance: none;
+}
+
+main {
+    width: 800px;
+    margin-top: 50px;
+}
+
+.ToDo h2 {
+    font-size: 30px;
+    background: linear-gradient(var(--black), var(--red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.todo {
+    background: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding-top: 13px;
+    border-radius: 10px;
+}
+
+.todo .content .text {
+    font-size: 20px;
+    color: gray;
+    padding-left: 20px;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+    appearance: none;
+}
+
+.action button {
+    margin-left: 20px;
+}
+
+.action .edit {
+    font-size: 20px;
+    background: linear-gradient(var(--purple), var(--red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.action .delete {
+    font-size: 20px;
+    color: crimson;
+    font-weight: 800;
+    cursor: pointer;
+    padding-right: 20px;
+}
